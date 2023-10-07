@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,177 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;500;600;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;500;600;900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <div class="menu flex">
+            <div class="logo">
+                <a href="#"><img src="img/logo.svg" alt="Kelsie Paige's logo"></a>
+            </div>
+            <nav>
+                <ul class="topnav flex">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="open-menu">
+                <img src="img/menu.svg" alt="Open menu icon">
+            </div>
+        </div>
+        <!-- <div class="line"></div> -->
+    </header>
+    <section id="hero">
+        <div class="content-wrapper">
+            <h1>Hi, I'm Kelsie.<br> I'm a <span>FRONT-END</span><br> <span>DEVELOPER</span></h1>
+            <div class="down-arrow">
+                <img src="img/arrow-down.svg" alt="Down arrow">
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="content-wrapper">
+            <h2>PROJECTS</h2>
+            <div class="project-container">
+                <div id="project-1" class="project">
+                    <img src="img/guess-the-word.png" alt="Guess the Word preview">
+                    <div class="project-info">
+                        <div class="project-title">
+                            <h3>Guess the Word Game</h3>
+                        </div>
+                        <div class="project-description">
+                            <p>An interactive word guessing game featuring randomized word selection and dynamic
+                                tracking of player's progress.</p>
+                        </div>
+                        <div class="skills">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>JavaScript</p>
+                            <p>API Integration</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button>View Demo</button>
+                        <button>View Code</button>
+                    </div>
+                </div>
+                <div id="project-2" class="project">
+                    <img src="img/unplugged.png" alt="Unplugged preview">
+                    <div class="project-info">
+                        <div class="project-title">
+                            <h3>Unplugged</h3>
+                        </div>
+                        <div class="project-description">
+                            <p>A 3-page responsive website adaptable to mobile, tablet, and desktop screens built
+                                from a
+                                design comp with a Mobile
+                                First approach.</p>
+                        </div>
+                        <div class="skills">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>Flexbox</p>
+                            <p>Media Queries</p>
+                        </div>
+                        <div class="buttons">
+                            <button>View Demo</button>
+                            <button>View Code</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="project-3" class="project">
+                    <img src="img/sticky-notes.png" alt="Sticky Notes App preview">
+                    <div class="project-info">
+                        <div class="project-title">
+                            <h3>Sticky Notes App</h3>
+                        </div>
+                        <div class="project-description">
+                            <p>A user-friendly app enabling creation, deletion, and organization of digital "sticky
+                                notes" for efficient task
+                                management.</p>
+                        </div>
+                        <div class="skills">
+                            <p>ES6</p>
+                            <p>JSX</p>
+                            <p>React</p>
+                        </div>
+                        <div class="buttons">
+                            <button>View Demo</button>
+                            <button>View Code</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="project-4" class="project">
+                    <img src="img/github-repo-gallery.png" alt="GitHub Repo Gallery preview">
+                    <div class="project-info">
+                        <div class="project-title">
+                            <h3>GitHub Repo Gallery</h3>
+                        </div>
+                        <div class="project-description">
+                            <p>A dynamic gallery of GitHub repositories allowing users to search, filter, and access
+                                detailed information for each
+                                project.</p>
+                        </div>
+                        <div class="skills">
+                            <p>JavaScript</p>
+                            <p>GitHub API</p>
+                        </div>
+                        <div class="buttons">
+                            <button>View Demo</button>
+                            <button>View Code</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="content-wrapper">
+            <h2>ABOUT ME</h2>
+            <div class="about-container">
+                <img src="img/profile photo.png" alt="Kelsie Paige">
+                <p>Hi, there! I’m Kelsie.</p>
+                <p>I have always been captivated by the process of problem-solving. Front-end development presents me
+                    with a unique set of challenges that constantly push me to come up with innovative solutions.</p>
+                <p>I am grateful to have found a career that allows me to utilize this skill with a creative
+                    capabilities.</p>
+                <p>When I’m not tapping away at the keyboard, you can find me growing crops or redesigning my farm
+                    layout in Stardew Valley. I, also, enjoy creating fun bullet journal spreads to keep myself organized and
+                    balanced.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="content-wrapper">
+            <h2>CONTACT ME</h2>
+            <p>Have an exciting project you’d like to collaborate on? Send me an email or reach out to me via social
+                media. Let’s turn
+                ideas into reality!</p>
+            <div class="socials">
+                <p class="linkedin">LinkedIn</p>
+                <p class="github">GitHub</p>
+                <p class="discord">Discord</p>
+                <p class="slack">Slack</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>2023 Made with &hearts; Kelsie Paige</p>
+    </footer>
 </body>
 <script src="js/script.js"></script>
+
 </html>
