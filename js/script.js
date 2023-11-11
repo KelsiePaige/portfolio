@@ -11,4 +11,3 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     menuButton.classList.remove('is-active');
     navMenu.classList.remove('active');
 }));
-
