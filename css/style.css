@@ -518,7 +518,13 @@ footer {
     }
 
     .hero-content {
-        margin: 160px auto;
+        margin: 140px auto;
+        padding: 100px 48px;
+        width: 95%;
+    }
+
+    .hero-content p {
+        width: 80%;
     }
 
     /*------------------------------------*\
@@ -678,12 +684,8 @@ footer {
 
     .hero-content p {
         font-size: 1.25em;
+        width: 80%;
     }
-
-    .down-arrow {
-        padding-top: 88px;
-    }
-
 
     /*------------------------------------*\
       #PROJECT-SECTION
@@ -854,13 +856,13 @@ footer {
     }
 
     .hero-content {
-        width: 80%;
-        margin: 192px auto;
-        padding: 212px 24px 124px;
+        width: 90%;
+        margin: auto;
+        padding: 212px 24px 100px;
     }
 
     .hero-content p {
-        width: 60%;
+        width: 90%;
     }
 
     /*------------------------------------*\
