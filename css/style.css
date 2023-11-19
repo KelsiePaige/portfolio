@@ -42,7 +42,7 @@ h1 {
 
 h1 span {
     -webkit-text-fill-color: var(--body);
-    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--teal);
     text-shadow: 0 0 3px var(--teal);
     font-weight: 900;
@@ -366,7 +366,7 @@ a:visited {
 
 .socials a {
     -webkit-text-fill-color: var(--body);
-    -webkit-text-stroke-width: .75px;
+    -webkit-text-stroke-width: 1px;
 
 }
 
