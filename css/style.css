@@ -4,6 +4,7 @@
     --font: #FFFFFF;
     --darkgrey: #4B5264;
     --teal: #04C2C9;
+    --hotpink: #F83082;
     --lightpurple: #A09AD6;
     --darkpurple: #524C88;
 }
@@ -71,8 +72,7 @@ h2 {
 h3 {
     font-size: 1.56em;
     font-weight: 500;
-    color: var(--lightpurple);
-
+    color: var(--hotpink);
 }
 
 h4 {
@@ -370,8 +370,7 @@ a:visited {
 
 }
 
-.linkedin a,
-.email a {
+.linkedin a {
     -webkit-text-stroke-color: var(--lightpurple);
 }
 
@@ -379,9 +378,11 @@ a:visited {
     -webkit-text-stroke-color: var(--teal);
 }
 
+.email a {
+    -webkit-text-stroke-color: var(--hotpink);
+}
 
-.linkedin a:hover,
-.email a:hover {
+.linkedin a:hover {
     text-shadow: 0 0 3px var(--lightpurple);
 }
 
@@ -389,7 +390,9 @@ a:visited {
     text-shadow: 0 0 3px var(--teal);
 }
 
-
+.email a:hover {
+    text-shadow: 0 0 3px var(--hotpink);
+}
 
 /*------------------------------------*\
   #FOOTER-SECTION
@@ -624,15 +627,18 @@ footer {
         padding-bottom: 40px;
     }
 
-    .linkedin a:hover,
-    .email a:hover {
+    .linkedin a:hover {
         text-shadow: 0 0 3.5px var(--lightpurple);
     }
+
 
     .github a:hover {
         text-shadow: 0 0 3.5px var(--teal);
     }
 
+    .email a:hover {
+        text-shadow: 0 0 3.5px var(--hotpink);
+    }
 }
 
 /*------------------------------------*\
@@ -810,10 +816,7 @@ footer {
         padding-bottom: 0;
     }
 
-
-
 }
-
 
 /*------------------------------------*\
   #DESKTOP-STYLES
@@ -828,6 +831,7 @@ footer {
     /*------------------------------------*\
           #HEADER-SECTION
         \*------------------------------------*/
+
     .navbar {
         padding: 0 200px;
     }
