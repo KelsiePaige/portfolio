@@ -40,11 +40,9 @@ h1 {
     font-family: var(--secondaryfont);
     font-size: 24px;
     font-weight: 300;
-    text-align: left;
-    line-height: normal;
     padding-bottom: 24px;
-    padding-top: 8px;
     line-height: 40px;
+    text-align: center;
 }
 
 h2 {
@@ -61,7 +59,7 @@ h3 {
     font-size: 24px;
     font-weight: 400;
     color: var(--font);
-    padding: 20px 0 30px;
+    margin: 20px 0;
     font-family: var(--mainfont);
 }
 
@@ -91,20 +89,6 @@ a:visited {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.hero-divider,
-.header-divider {
-    width: 251px;
-    height: 1px;
-    background-color: var(--font);
-    margin: 0 auto;
-}
-
-.title-divider {
-    width: 327px;
-    height: 1px;
-    background-color: var(--green);
 }
 
 /*------------------------------------*\
@@ -150,35 +134,20 @@ a:visited {
 /*------------------------------------*\
   #HERO-SECTION
 \*------------------------------------*/
-#hero .content-wrapper {
-    height: auto;
-}
-
-/* .memoji {
-border: 1px solid;
-width: 220px;
-height: 220px;
-border-radius: 100%;;
-}
-
-#hero img {
-    width: 200px;
-    height: 200px;
-} */
-
-.hero-content h1 {
-    text-align: center;
-}
 
 .hero-content {
     width: 327px;
     margin-top: 144px;
     padding-bottom: 24px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .hero-content p {
-    padding-top: 32px;
+    margin-top: 32px;
+    text-align: center;
 }
 
 .hero-buttons {
@@ -213,20 +182,27 @@ border-radius: 100%;;
     text-decoration: none;
 }
 
+.hero-divider,
+.header-divider {
+    width: 251px;
+    height: 1px;
+    background-color: var(--font);
+    margin: 0 auto;
+}
+
+
 /*------------------------------------*\
   #SKILLS-&-TOOLS-SECTION
 \*------------------------------------*/
 
 .skillset-container p {
-    text-align: center;
-    padding: 0 24px;
-    font-size: 16px;
+    font-size: 17px;
+    margin: auto 0;
 }
 
 .tools .skill {
     width: 50%;
     height: 142px;
-    /* Re-evaluate this */
     margin-top: 24px;
     margin-bottom: 24px;
 }
@@ -252,11 +228,9 @@ border-radius: 100%;;
 .react,
 .node,
 .sql,
-.api,
 .git,
 .github-skill,
 .figma,
-.mobile-first,
 .vs-code {
     height: 80px;
     width: 80px;
@@ -288,10 +262,6 @@ border-radius: 100%;;
     background-image: url("../img/database-sql.svg");
 }
 
-.api {
-    background-image: url("../img/gears.svg");
-}
-
 .git {
     background-image: url("../img/git-alt.svg");
 }
@@ -302,10 +272,6 @@ border-radius: 100%;;
 
 .figma {
     background-image: url("../img/figma.svg");
-}
-
-.mobile-first {
-    background-image: url("../img/mobile-first.svg");
 }
 
 .vs-code {
@@ -427,7 +393,7 @@ border-radius: 100%;;
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
-    padding: 36px 0 76px;
+    margin: 36px 0 76px;
 }
 
 .project-image {
@@ -468,16 +434,23 @@ border-radius: 100%;;
 }
 
 .project-description {
-    padding: 30px 0 20px;
+    margin-top: 20px;
 }
 
 .skill-list {
     display: flex;
+    gap: 24px;
 }
 
 .skill-list p {
     font-weight: 500;
-    padding-right: 20px;
+    margin: 0;
+}
+
+.title-divider {
+    width: 327px;
+    height: 1px;
+    background-color: var(--green);
 }
 
 /*------------------------------------*\
@@ -603,6 +576,161 @@ footer {
 }
 
 /*------------------------------------*\
+  #TABLET-STYLES
+\*------------------------------------*/
+
+@media screen and (min-width: 768px) {
+
+    .test {
+        background-color: blueviolet;
+        width: 768px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+        padding-bottom: 32px;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin: 24px 0;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 36px;
+    }
+
+    .content-wrapper {
+        margin: 62px 48px;
+        /* border: 1px solid; */
+    }
+
+    /*------------------------------------*\
+      #HEADER-SECTION
+    \*------------------------------------*/
+
+    .navbar {
+        padding: 0 48px;
+        transition: 0.3s ease;
+    }
+
+    .nav-menu {
+        gap: 24px;
+    }
+
+    /*------------------------------------*\
+      #HERO-SECTION
+    \*------------------------------------*/
+
+    .hero-content {
+        margin-top: 150px;
+        width: 524px;
+    }
+
+    .hero-content p {
+        margin-top: 36px;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .hero-divider,
+    .header-divider {
+        width: 340px;
+    }
+
+    /*------------------------------------*\
+      #SKILLS-&-TOOLS-SECTION
+    \*------------------------------------*/
+
+    .tools .skill {
+        width: 31%;
+        height: 164px;
+        /* margin-top: 32px;
+        margin-bottom: 32px; */
+    }
+
+    .tiles-circle p {
+        font-size: 16px;
+    }
+
+    /*------------------------------------*\
+          #PROJECT-SECTION
+    \*------------------------------------*/
+
+    .project {
+        margin: 64px 0 100px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .project img {
+        width: 420px;
+    }
+
+    .project .button {
+        font-size: 14px;
+        margin-top: 24px;
+    }
+
+    .project-info {
+        width: 420px;
+    }
+
+    .project-description {
+        margin: 24px 0;
+    }
+
+    .skill-list p {
+        font-size: 16px;
+    }
+
+    .title-divider {
+        width: 420px;
+    }
+
+    /*------------------------------------*\
+      #ABOUT-SECTION
+    \*------------------------------------*/
+
+    .about-container img {
+        width: 280px;
+        margin-top: 32px;
+    }
+
+    /*------------------------------------*\
+      #CONTACT-SECTION
+    \*------------------------------------*/
+
+    form {
+        margin-top: 40px;
+        width: 648px;
+    }
+
+    input[id="name"],
+    input[id="email"],
+    input[type="submit"],
+    textarea {
+        width: 100%;
+    }
+
+}
+
+/*------------------------------------*\
   #MEDIUM-TO-LARGE_MOBILE-STYLES
 \*------------------------------------*/
 
@@ -681,187 +809,44 @@ footer {
 }
 
 /*------------------------------------*\
-  #TABLET-STYLES
-\*------------------------------------*/
-
-@media screen and (min-width: 768px) {
-
-    h1 {
-        font-size: 30px;
-        line-height: 48px;
-        padding-bottom: 28px;
-    }
-
-    h2 {
-        font-size: 36px;
-        padding-bottom: 32px;
-    }
-
-    h3 {
-        font-size: 28px;
-        padding: 24px 0 34px;
-    }
-
-    p {
-        font-size: 18px;
-    }
-
-    span {
-        font-size: 36px;
-    }
-
-    .content-wrapper {
-        margin: 62px 48px;
-        /* border: 1px solid; */
-    }
-
-    .hero-divider,
-    .header-divider {
-        width: 422px;
-    }
-
-    .title-divider {
-        width: 502px;
-    }
-
-    /*------------------------------------*\
-      #HEADER-SECTION
-    \*------------------------------------*/
-    .navbar {
-        padding: 0 48px;
-        transition: 0.3s ease;
-    }
-
-    .nav-menu {
-        gap: 24px;
-    }
-
-    /*------------------------------------*\
-      #HERO-SECTION
-    \*------------------------------------*/
-
-    .hero-content {
-        margin-top: 212px;
-        width: 524px;
-        padding: 0 24px;
-    }
-
-    .hero-content p {
-        padding-top: 36px;
-    }
-
-    .hero-buttons {
-        flex-direction: row;
-        gap: 24px;
-    }
-
-    /*------------------------------------*\
-      #SKILLS-&-TOOLS-SECTION
-    \*------------------------------------*/
-
-    .tools .skill {
-        width: 31%;
-        height: 164px;
-        margin-top: 32px;
-        margin-bottom: 32px;
-    }
-
-    .tiles-circle p {
-        font-size: 16px;
-    }
-
-    /*------------------------------------*\
-          #PROJECT-SECTION
-        \*------------------------------------*/
-
-    .project {
-        padding: 48px 0 64px;
-    }
-
-    .buttons {
-        flex-direction: row;
-        padding: 0;
-    }
-
-    .project img {
-        width: 502px;
-    }
-
-    .project .button {
-        font-size: 14px;
-    }
-
-    .project-info {
-        width: 502px;
-    }
-
-    .project-description {
-        padding: 34px 0 24px;
-    }
-
-    .skill-list p {
-        font-size: 16px;
-        padding-right: 24px;
-    }
-
-    /*------------------------------------*\
-      #ABOUT-SECTION
-    \*------------------------------------*/
-
-    .about-container img {
-        width: 280px;
-        margin-top: 32px;
-    }
-
-    /*------------------------------------*\
-      #CONTACT-SECTION
-    \*------------------------------------*/
-
-    form {
-        margin-top: 40px;
-    }
-
-    form,
-    input[type="text"],
-    input[type="submit"],
-    textarea {
-        width: 507px;
-    }
-
-}
-
-/*------------------------------------*\
   #LAPTOP-STYLES
 \*------------------------------------*/
 
 @media screen and (min-width: 1024px) {
-
-    /* RESET MARGINS AND PADDINGS FOR ALL HEADINGS, PARAGRAPHS, CONTENT WRAPPERS   */
+    .test {
+        width: 1024px;
+        height: 2px;
+        background-color: #04C2C9;
+    }
 
     h1 {
-        font-size: 2.25em;
+        font-size: 36px;
     }
 
     h2 {
-        font-size: 5em;
-        padding-top: 96px;
-        text-align: left;
+        font-size: 36px;
     }
 
     h3 {
-        font-size: 2em;
+        font-size: 24px;
+    }
+
+    span {
+        font-size: 40px;
     }
 
     .content-wrapper {
         margin: 96px 100px;
     }
 
-    /* Screen width marker */
-    /* .test {
-        width: 1024px;
-        height: 2px;
-        background-color: #04C2C9;
-    } */
+    .hero-divider,
+    .header-divider {
+        width: 402px;
+    }
+
+    .title-divider {
+        width: 352px;
+    }
 
     /*------------------------------------*\
       #HEADER-SECTION
@@ -871,9 +856,12 @@ footer {
     }
 
     .nav-item {
-        font-size: 1.125em;
-        padding: 12px 8px;
-        height: auto;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .nav-menu {
+        gap: 8px;
     }
 
     .hamburger {
@@ -885,169 +873,76 @@ footer {
     \*------------------------------------*/
 
     .hero-content {
-        margin: 0;
-        padding: 96px 64px 100px 0;
-    }
-
-    /*------------------------------------*\
-      #PROJECT-SECTION
-    \*------------------------------------*/
-
-    #projects h2 {
-        text-align: left;
-        /* Adjust globally */
-    }
-
-    .project {
-        margin: 0 auto;
-        padding: 56px 0;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 824px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .project .project-image img {
-        width: 360px;
-    }
-
-    .project .project-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 215px;
+        margin-top: 86px;
+        width: 684px;
         padding: 0;
-        margin: 0;
-        width: 360px;
     }
 
-    .project .buttons {
-        width: 360px;
-        gap: 32px;
-        margin-top: 8px;
-        /* Add animation/hover effects */
+    .hero-content p {
+        margin-top: 32px;
     }
 
-    .unplugged,
-    .gallery {
-        flex-direction: row-reverse;
+    .hero-divider,
+    .header-divider {
+        width: 400px;
     }
 
     /*------------------------------------*\
       #SKILLS-&-TOOLS-SECTION
     \*------------------------------------*/
-    #skillset {
-        /* border: 1px dotted red; */
-    }
-
-    #skillset h2 {
-        padding-top: 96px;
-    }
-
-    .skillset-container {
-        vertical-align: middle;
-        /* border: 1px solid;  */
-    }
-
-    .skillset-container h3 {
-        /* border: 1px solid; */
-        padding-top: 96px;
-    }
 
     .tools .skill {
         width: 25%;
     }
 
     /*------------------------------------*\
-      #ABOUT-SECTION
+      #PROJECT-SECTION
     \*------------------------------------*/
-    #about {
-        /* border: 1px dotted red;  */
-    }
 
-    #about .about-container {
-        /* border: 1px dotted blue; */
+    .projects-container {
+        width: 824px;
+        min-height: 100%;
+        padding-top: 64px;
         display: flex;
-        align-items: left;
-        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    #about h2 {
-        padding-top: 96px;
-        /* Check all IDs with h2; make them padding: 0; */
-        padding-bottom: 104px;
-        text-align: left;
-        /* border: 1px solid; */
+    .project {
+        margin-bottom: 148px;
+        width: 352px;
+        height: auto;
     }
 
-    .about-container {
-        /* padding-bottom: 56px; */
-        display: flex;
-        /* flex-wrap: wrap; */
-        text-align: left;
-        /* border: 1px solid;  */
+    .project img {
+        width: 352px;
     }
 
-    .about-container p:first-of-type {
-        font-size: 2em;
-        padding: 0 0 24px 0;
-        text-align: left;
-        /* border: 1px solid; */
+    .project-info {
+        width: 352px;
     }
 
-    .about-container p:last-of-type {
-        font-size: 1.25em;
-        font-weight: 300;
-        /* border: 1px solid; */
+    .project .button {
+        margin-top: 24px;
     }
 
-    #about img {
-        width: 280px;
-        /* border: 1px solid; */
+    .title-divider {
+        width: 352px;
     }
+
+    /*------------------------------------*\
+      #ABOUT-SECTION
+    \*------------------------------------*/
+
+    /* About section styles */
 
     /*------------------------------------*\
       #CONTACT-SECTION
     \*------------------------------------*/
 
-    #contact .content-wrapper {
-        display: block;
-    }
-
-    #contact h2 {
-        text-align: left;
-        padding-top: 96px;
-        padding-bottom: 24px;
-    }
-
-    .contact-cta {
-        font-size: 1.25em;
-        text-align: left;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        font-weight: 300;
-        /* padding: 24px 88px; */
-    }
-
-    .socials {
-        margin: 0;
-        padding: 80px 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        /* align-items: center; */
-        /* flex-wrap: wrap; */
-        text-align: center;
-        /* gap: 48px; */
-    }
-
-    .socials p {
-        font-size: 3em;
-        padding-bottom: 0;
+    form {
+        margin-top: 64px;
+        width: 684px;
     }
 
 }
@@ -1058,23 +953,28 @@ footer {
 
 @media screen and (min-width: 1440px) {
 
-    /* .test {
+    .test {
         width: 1440px;
         height: 2px;
         background-color: #F83082;
-    } */
-
-    body {
-        font-weight: 400;
     }
 
-    h2 {
-        padding-top: 0;
-        /* border: 1px solid; */
+    h1 {
+        font-size: 40px;
+        line-height: 64px;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin: 30px 0;
+    }
+
+    span {
+        font-size: 48px;
     }
 
     .content-wrapper {
-        margin: 120px 300px;
+        margin: 72px 100px;
     }
 
     /*------------------------------------*\
@@ -1082,125 +982,146 @@ footer {
     \*------------------------------------*/
 
     .navbar {
-        padding: 0 300px;
+        padding: 0 100px;
     }
 
     .nav-menu {
-        gap: 40px;
+        gap: 24px;
     }
 
     /*------------------------------------*\
           #HERO-SECTION
     \*------------------------------------*/
 
-    /* Adjust top padding to 48px */
-    #hero .content-wrapper {
-        /* border: 1px solid; */
-    }
-
-    .hero-content {
-        /* border: 1px solid red; */
-        margin-top: 300px;
-        padding-top: 120px;
-        width: 800px;
-    }
-
     .hero-content p {
-        font-size: 1.25em;
+        width: 820px;
+        margin-top: 40px;
     }
 
-    /*------------------------------------*\
-          #PROJECT-SECTION
-    \*------------------------------------*/
+    .hero-buttons .button {
+        width: 190px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-    #projects .content-wrapper {
-        /* Adjust padding-top for all screen sizes */
-        padding-top: 48px;
+    .project-button,
+    .contact-button {
+        font-size: 20px;
     }
 
     /*------------------------------------*\
           #SKILLS-&-TOOLS-SECTION
     \*------------------------------------*/
 
-    #skillset .content-wrapper {
-        padding-top: 48px;
+    .tools .skill {
+        width: 20%;
     }
 
-    .tools .skill {
-        width: 16%;
+    /*------------------------------------*\
+          #PROJECT-SECTION
+    \*------------------------------------*/
+
+    .projects-container {
+        width: 1030px;
+    }
+
+    .project {
+        margin-bottom: 172px;
+        width: 420px;
+    }
+
+    .project img {
+        width: 420px;
+    }
+
+    .project-info {
+        width: 420px;
+    }
+
+    .project-description {
+        margin: 30px 0;
+    }
+
+    .project .button {
+        margin-top: 30px;
+    }
+
+    .title-divider {
+        width: 420px;
     }
 
     /*------------------------------------*\
           #ABOUT-SECTION
     \*------------------------------------*/
 
-    #about .content-wrapper {
-        padding-top: 48px;
+    /*------------------------------------*\
+          #CONTACT-SECTION
+    \*------------------------------------*/
+
+    form {
+        margin-top: 64px;
+        width: 820px;
     }
 
 }
 
 @media screen and (min-width: 2560px) {
 
+    .test {
+        width: 2540px;
+        height: 2px;
+        background-color: #379944;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
     .content-wrapper {
-        margin: 120px 500px;
+        margin: 72px 300px;
     }
 
     /*------------------------------------*\
               #HEADER-SECTION
     \*------------------------------------*/
 
-    /* Change logo size */
-
     .navbar {
-        padding: 0 500px;
+        padding: 0 300px;
     }
 
     .nav-menu {
-        gap: 64px;
-        font-size: 1.25em;
-    }
-
-    .logo img {
-        width: 32px;
-        height: 38px;
+        gap: 24px;
     }
 
     /*------------------------------------*\
               #HERO-SECTION
     \*------------------------------------*/
 
-    #hero .content-wrapper {
-        padding-top: 56px;
-    }
-
     /*------------------------------------*\
               #PROJECT-SECTION
-        \*------------------------------------*/
+    \*------------------------------------*/
 
-    #projects .content-wrapper {
-        /* Adjust padding-top for all screen sizes */
-        padding-top: 56px;
+    .projects-container {
+        width: 1244px;
     }
 
-    /*------------------------------------*\
-              #SKILLS-&-TOOLS-SECTION
-        \*------------------------------------*/
-
-    #skillset .content-wrapper {
-        padding-top: 56px;
+    .project {
+        margin-bottom: 172px;
+        width: 500px;
     }
 
-    .tools .skill {
-        width: 16%;
+    .project img {
+        width: 500px;
     }
 
-    /*------------------------------------*\
-              #ABOUT-SECTION
-        \*------------------------------------*/
+    .project-info {
+        width: 500px;
+    }
 
-    #about .content-wrapper {
-        padding-top: px;
+    .title-divider {
+        width: 500px;
     }
 
 }

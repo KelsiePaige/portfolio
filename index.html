@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Kelsie Paige</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-
+    <!-- Epilogue and Montserrat Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,6 +24,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-32x32.png">
     <link rel="manifest" href="img/favicon_io/site.webmanifest">
+
 </head>
 
 <body>
@@ -43,10 +50,10 @@
                 <!-- <div class="memoji"><img src="img/memoji.png" alt="Memoji"></div> -->
                 <h1>Hi, there! My name is<br><span>Kelsie Paige</span></h1>
                 <div class="hero-divider"></div>
-                <p>I’m a Front-End Web Developer based in Virginia Beach, VA.<br><br>When I’m not coding you can find me
+                <p>I’m a Front-End Web Developer.<br><br>When I’m not coding you can find me
                     getting lost inside a fantasy novel, getting organized with my bullet journal, or
                     getting crafty with bookbinding.<br><br>If you’re looking for a detail-oriented, creative
-                    professional with versatility who is eager to help you and your
+                    professional who is eager to help you and your
                     company succeed, please reach out at kelsie.p.brown@gmail.com.</p>
 
                 <div class="hero-buttons">
@@ -55,7 +62,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="test"></div> -->
+        <div class="test"></div>
     </section>
 
     <section id="skills">
@@ -135,17 +142,6 @@
                             <div class="tiles-card">
                                 <div class="tiles-overlay"></div>
                                 <div class="tiles-circle">
-                                    <div class="api"></div>
-                                    <p>APIs</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="circle">
-                            <div class="tiles-card">
-                                <div class="tiles-overlay"></div>
-                                <div class="tiles-circle">
                                     <div class="git"></div>
                                     <p>Git</p>
                                 </div>
@@ -179,17 +175,6 @@
                             <div class="tiles-card">
                                 <div class="tiles-overlay"></div>
                                 <div class="tiles-circle">
-                                    <div class="mobile-first"></div>
-                                    <p>Mobile First</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="circle">
-                            <div class="tiles-card">
-                                <div class="tiles-overlay"></div>
-                                <div class="tiles-circle">
                                     <div class="vs-code"></div>
                                     <p>VS Code</p>
                                 </div>
@@ -205,114 +190,116 @@
         <div class="content-wrapper">
             <h2>Projects</h2>
             <div class="header-divider"></div>
-            <div class="project game"> <!-- Guess the Word Game -->
-                <div class="project-image">
-                    <img src="img/guess-the-word.png" alt="Guess the Word preview">
-                </div>
-                <div class="project-info">
-                    <div class="project-title">
-                        <h3>Guess the Word Game</h3>
-                        <div class="title-divider"></div>
+            <div class="projects-container">
+                <div class="project game"> <!-- Guess the Word Game -->
+                    <div class="project-image">
+                        <img src="img/guess-the-word.png" alt="Guess the Word preview">
                     </div>
-                    <div class="project-description">
-                        <p>An interactive word guessing game featuring randomized word selection and dynamic
-                            tracking of
-                            player's progress.</p>
+                    <div class="project-info">
+                        <div class="project-title">
+                            <h3>Guess the Word Game</h3>
+                            <div class="title-divider"></div>
+                        </div>
+                        <div class="project-description">
+                            <p>An interactive word guessing game featuring randomized word selection and dynamic
+                                tracking of
+                                player's progress.</p>
+                        </div>
+                        <div class="skill-list">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>JavaScript</p>
+                            <p>API</p>
+                        </div>
                     </div>
-                    <div class="skill-list">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JavaScript</p>
-                        <p>API</p>
+                    <div class="buttons">
+                        <a class="button" href="https://kelsiepaige.github.io/guess-the-word/" target="_blank">View
+                            Demo</a>
+                        <a class="button" href="https://github.com/KelsiePaige/guess-the-word" target="_blank">View
+                            Code</a>
                     </div>
-                </div>
-                <div class="buttons">
-                    <a class="button" href="https://kelsiepaige.github.io/guess-the-word/" target="_blank">View
-                        Demo</a>
-                    <a class="button" href="https://github.com/KelsiePaige/guess-the-word" target="_blank">View
-                        Code</a>
-                </div>
-            </div>
-
-            <div class="project unplugged"> <!-- Unplugged -->
-                <div class="project-image">
-                    <img src="img/unplugged.png" alt="Unplugged preview">
-                </div>
-                <div class="project-info">
-                    <div class="project-title">
-                        <h3>Unplugged</h3>
-                        <div class="title-divider"></div>
-                    </div>
-                    <div class="project-description">
-                        <p>A 3-page responsive website adaptable to mobile, tablet, and desktop screens built
-                            from a
-                            design comp with a Mobile
-                            First approach.</p>
-                    </div>
-                    <div class="skill-list">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <a class="button" href="https://kelsiepaige.github.io/unplugged-project/" target="_blank">View
-                        Demo</a>
-                    <a class="button" href="https://github.com/KelsiePaige/unplugged-project" target="_blank">View
-                        Code</a>
-                </div>
-            </div>
-
-            <div class="project notes"> <!-- Sticky Notes App -->
-                <div class="project-image">
-                    <img src="img/sticky-note-app.png" alt="Sticky Notes App preview">
-                </div>
-                <div class="project-info">
-                    <div class="project-title">
-                        <h3>Sticky Notes App</h3>
-                        <div class="title-divider"></div>
-                    </div>
-                    <div class="project-description">
-                        <p>A user-friendly app enabling creation, deletion, and organization of digital "sticky
-                            notes" for efficient task
-                            management.</p>
-                    </div>
-                    <div class="skill-list">
-                        <p>React</p>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <a class="button" href="https://kelsiepaige.github.io/sticky-note-app/" target="_blank">View
-                        Demo</a>
-                    <a class="button" href="https://github.com/KelsiePaige/sticky-note-app/tree/main"
-                        target="_blank">View Code</a>
-                </div>
-            </div>
-
-            <div class="project gallery"> <!-- GitHub Repo Gallery -->
-                <div class="project-image">
-                    <img src="img/github-repo-gallery.png" alt="GitHub Repo Gallery preview">
                 </div>
 
-                <div class="project-info">
-                    <div class="project-title">
-                        <h3>GitHub Repo Gallery</h3>
-                        <div class="title-divider"></div>
+                <div class="project unplugged"> <!-- Unplugged -->
+                    <div class="project-image">
+                        <img src="img/unplugged.png" alt="Unplugged preview">
                     </div>
-                    <div class="project-description">
-                        <p>A dynamic gallery of GitHub repositories allowing users to search, filter, and access
-                            detailed information for each
-                            project.</p>
+                    <div class="project-info">
+                        <div class="project-title">
+                            <h3>Unplugged</h3>
+                            <div class="title-divider"></div>
+                        </div>
+                        <div class="project-description">
+                            <p>A 3-page responsive website adaptable to mobile, tablet, and desktop screens built
+                                from a
+                                design comp with a Mobile
+                                First approach.</p>
+                        </div>
+                        <div class="skill-list">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                        </div>
                     </div>
-                    <div class="skill-list">
-                        <p>JavaScript</p>
-                        <p>GitHub API</p>
+                    <div class="buttons">
+                        <a class="button" href="https://kelsiepaige.github.io/unplugged-project/" target="_blank">View
+                            Demo</a>
+                        <a class="button" href="https://github.com/KelsiePaige/unplugged-project" target="_blank">View
+                            Code</a>
                     </div>
                 </div>
-                <div class="buttons">
-                    <a class="button" href="https://kelsiepaige.github.io/github-repo-gallery/" target="_blank">View
-                        Demo</a>
-                    <a class="button" href="https://github.com/KelsiePaige/github-repo-gallery" target="_blank">View
-                        Code</a>
+
+                <div class="project notes"> <!-- Sticky Notes App -->
+                    <div class="project-image">
+                        <img src="img/sticky-note-app.png" alt="Sticky Notes App preview">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-title">
+                            <h3>Sticky Notes App</h3>
+                            <div class="title-divider"></div>
+                        </div>
+                        <div class="project-description">
+                            <p>A user-friendly app enabling creation, deletion, and organization of digital "sticky
+                                notes" for efficient task
+                                management.</p>
+                        </div>
+                        <div class="skill-list">
+                            <p>React</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <a class="button" href="https://kelsiepaige.github.io/sticky-note-app/" target="_blank">View
+                            Demo</a>
+                        <a class="button" href="https://github.com/KelsiePaige/sticky-note-app/tree/main"
+                            target="_blank">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project gallery"> <!-- GitHub Repo Gallery -->
+                    <div class="project-image">
+                        <img src="img/github-repo-gallery.png" alt="GitHub Repo Gallery preview">
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-title">
+                            <h3>GitHub Repo Gallery</h3>
+                            <div class="title-divider"></div>
+                        </div>
+                        <div class="project-description">
+                            <p>A dynamic gallery of GitHub repositories allowing users to search, filter, and access
+                                detailed information for each
+                                project.</p>
+                        </div>
+                        <div class="skill-list">
+                            <p>JavaScript</p>
+                            <p>GitHub API</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <a class="button" href="https://kelsiepaige.github.io/github-repo-gallery/" target="_blank">View
+                            Demo</a>
+                        <a class="button" href="https://github.com/KelsiePaige/github-repo-gallery" target="_blank">View
+                            Code</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -328,9 +315,8 @@
                 <div class="about-content">
                     <p>I have always been captivated by the process of problem-solving. Front-end development presents
                         me with a unique set of challenges that constantly push me to come up with innovative
-                        solutions.<br><br>
-                        I am grateful to have found a career that allows me to utilize this skill with a creative
-                        capabilities.<br></p>
+                        solutions.<br>
+                        </p>
                 </div>
             </div>
         </div>
@@ -341,12 +327,22 @@
             <h2>Contact</h2>
             <div class="header-divider"></div>
             <form action="" method="post">
-                <label for="name">Name: </label><br>
-                <input type="text" id="name" name="name" aria-placeholder="name"><br>
-                <label for="email">Email: </label><br>
-                <input type="text" id="email" name="email" aria-placeholder="email"><br>
-                <label for="message">Message: </label><br>
-                <textarea name="message" aria-placeholder="message"></textarea><br>
+                <div class="row">
+                    <div class="col">
+                        <label for="name">Name: </label><br>
+                        <input type="text" id="name" name="name" aria-placeholder="name"><br>
+                    </div>
+                    <div class="col">
+                        <label for="email">Email: </label><br>
+                        <input type="text" id="email" name="email" aria-placeholder="email"><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="message">Message: </label><br>
+                        <textarea name="message" aria-placeholder="message"></textarea><br>
+                    </div>
+                </div>
                 <input type="submit" value="Submit">
             </form>
         </div>
@@ -367,6 +363,9 @@
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 
 </html>
