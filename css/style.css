@@ -2,9 +2,9 @@
     --body: #1C354F;
     --menu: #162A3F;
     --font: #FAFCFA;
-    --green: #39e450;
-    --lightgreen: #95f0a1;
-    --darkgreen: #09c923;
+    --green: #39E450;
+    --lightgreen: #95F0A1;
+    --darkgreen: #09C923;
     --secondaryfont: 'Epilogue', sans-serif;
     --mainfont: 'Montserrat', sans-serif;
 }
@@ -17,14 +17,8 @@
     box-sizing: border-box;
 }
 
-.test {
-    width: 375px;
-    height: 2px;
-    background-color: #F83082;
-}
-
 html {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -123,10 +117,11 @@ a:visited {
     padding: 24px;
     font-size: 20px;
     font-weight: 400;
+    transition: 0.025s ease;
 }
 
 .nav-item:hover {
-    border-bottom: 1px solid var(--green);
+    color: var(--green);
 }
 
 .hamburger {
@@ -240,8 +235,7 @@ a:visited {
 .sql,
 .git,
 .github-skill,
-.figma,
-.vs-code {
+.figma {
     height: 80px;
     width: 80px;
     background-repeat: no-repeat;
@@ -282,10 +276,6 @@ a:visited {
 
 .figma {
     background-image: url("../img/figma.svg");
-}
-
-.vs-code {
-    background-image: url("../img/vs-code.svg");
 }
 
 .circle {
@@ -410,7 +400,7 @@ a:visited {
     transition: .5s ease;
 }
 
-.project img {
+.project-image img {
     display: block;
     width: 327px;
     height: auto;
@@ -420,7 +410,7 @@ a:visited {
 .project .button {
     padding: 12px 24px;
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--font);
     background: var(--body);
@@ -467,69 +457,49 @@ a:visited {
   #CONTACT-SECTION
 \*------------------------------------*/
 
-/************* Form styles *************/
-
-form {
-    margin: 36px 0 64px;
-    width: 327px;
-    height: auto;
+.contact-container {
+    margin: 96px 0;
 }
 
-input,
-textarea {
-    outline: none;
-    font-family: var(--secondaryfont);
+.contact-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-input[type="text"],
-textarea {
-    width: 327px;
-    background-color: #1C354F;
-    border: 1px solid var(--font);
-    border-radius: 6px;
-    margin: 8px 0 24px;
-    color: var(--font);
-    padding: 10px;
+.contact-container p {
+    margin-bottom: 56px;
 }
 
-input[type="text"] {
-    height: 42px;
+#contact .contact-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-textarea {
-    height: 124px;
-    resize: none;
-
-}
-
-input[type="text"]:focus,
-textarea:focus {
+#contact .contact-button .button {
+    padding: 12px 36px;
     border: 1px solid var(--darkgreen);
-}
-
-input[type="submit"] {
-    width: 327px;
-    height: 53px;
     border-radius: 6px;
-    font-family: var(--mainfont);
-    border: none;
-    background-color: var(--darkgreen);
     color: var(--font);
-    font-size: 20px;
     cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-input[type="submit"]:hover {
-    background-color: var(--green);
+#contact .contact-button .button:hover {
+    background-color: var(--darkgreen);
 }
 
-/*------------------------------------*\
-  #FOOTER-SECTION
-\*------------------------------------*/
+#contact .contact-button a:visited {
+    text-decoration: none;
+}
 
-footer {
-    margin: 25px 0;
-    height: auto;
+.calendly {
+    color: var(--font);
+    text-decoration: none;
 }
 
 .social-icons {
@@ -537,7 +507,7 @@ footer {
     height: auto;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 56px auto 0;
 }
 
 .linkedin-icon {
@@ -552,7 +522,7 @@ footer {
     width: 32px;
     height: 32px;
     background-repeat: no-repeat;
-    margin: 0 64px;
+    margin: 0 48px;
 }
 
 .email-icon {
@@ -562,16 +532,48 @@ footer {
     background-repeat: no-repeat;
 }
 
+.linkedin-icon:hover {
+    background: url("../img/linkedin-in-hover.svg");
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    scale: 1.1;
+}
+
+.github-icon:hover {
+    background: url("../img/github-social-hover.svg");
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    scale: 1.1;
+}
+
+.email-icon:hover {
+    background: url("../img/envelope-hover.svg");
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    scale: 1.1;
+}
+
+/*------------------------------------*\
+  #FOOTER-SECTION
+\*------------------------------------*/
+
+footer {
+    margin: 25px 0;
+    height: auto;
+}
+
+footer p {
+    text-align: center;
+}
+
 /*------------------------------------*\
   #TABLET-STYLES
 \*------------------------------------*/
 
 @media screen and (min-width: 768px) {
-
-    .test {
-        background-color: blueviolet;
-        width: 768px;
-    }
 
     h1 {
         font-size: 30px;
@@ -643,8 +645,6 @@ footer {
     .tools .skill {
         width: 31%;
         height: 164px;
-        /* margin-top: 32px;
-        margin-bottom: 32px; */
     }
 
     .tiles-circle p {
@@ -669,7 +669,6 @@ footer {
     }
 
     .project .button {
-        font-size: 14px;
         margin-top: 24px;
     }
 
@@ -693,18 +692,17 @@ footer {
       #CONTACT-SECTION
     \*------------------------------------*/
 
-    form {
-        margin-top: 40px;
-        width: 648px;
+    .contact-container h3 {
+        margin-bottom: 32px;
     }
 
-    input[id="name"],
-    input[id="email"],
-    input[type="submit"],
-    textarea {
-        width: 100%;
+    .contact-container p {
+        margin-bottom: 64px;
     }
 
+    .social-icons {
+        margin: 64px auto 0;
+    }
 }
 
 /*------------------------------------*\
@@ -736,6 +734,7 @@ footer {
         height: 100vh;
         text-align: center;
         padding-top: 120px;
+        transition: 0.5s ease-in-out;
     }
 
     .nav-item {
@@ -743,11 +742,17 @@ footer {
         width: 70%;
         margin: 24px 0;
         padding: 24px 0;
+        font-size: 28px;
+    }
+
+    li:nth-child(2) {
+        display: none;
     }
 
     .nav-menu.active {
         top: 0;
         background-color: var(--menu);
+        transition: 0.5s ease-in-out;
     }
 
     .hamburger {
@@ -783,7 +788,6 @@ footer {
     .hamburger.is-active .bar {
         opacity: 0;
     }
-
 }
 
 /*------------------------------------*\
@@ -791,11 +795,6 @@ footer {
 \*------------------------------------*/
 
 @media screen and (min-width: 1024px) {
-    .test {
-        width: 1024px;
-        height: 2px;
-        background-color: #04C2C9;
-    }
 
     h1 {
         font-size: 36px;
@@ -886,6 +885,10 @@ footer {
         width: 824px;
     }
 
+    span.highlights {
+        font-size: 28px;
+    }
+
     /*------------------------------------*\
       #SKILLS-&-TOOLS-SECTION
     \*------------------------------------*/
@@ -928,16 +931,6 @@ footer {
     .title-divider {
         width: 352px;
     }
-
-    /*------------------------------------*\
-      #CONTACT-SECTION
-    \*------------------------------------*/
-
-    form {
-        margin-top: 64px;
-        width: 684px;
-    }
-
 }
 
 /*------------------------------------*\
@@ -945,12 +938,6 @@ footer {
 \*------------------------------------*/
 
 @media screen and (min-width: 1440px) {
-
-    .test {
-        width: 1440px;
-        height: 2px;
-        background-color: #F83082;
-    }
 
     h1 {
         font-size: 40px;
@@ -1053,25 +1040,9 @@ footer {
     .title-divider {
         width: 420px;
     }
-
-    /*------------------------------------*\
-          #CONTACT-SECTION
-    \*------------------------------------*/
-
-    form {
-        margin-top: 64px;
-        width: 820px;
-    }
-
 }
 
 @media screen and (min-width: 2560px) {
-
-    .test {
-        width: 2540px;
-        height: 2px;
-        background-color: #379944;
-    }
 
     h2 {
         font-size: 40px;
