@@ -877,16 +877,17 @@ footer p {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        text-align: justify;
     }
 
     .about-content p {
         padding-top: 64px;
         width: 824px;
+        text-align: center;
     }
 
-    span.highlights {
-        font-size: 28px;
+    span.highlight-sm {
+        font-size: 20px;
+        color: var(--green);
     }
 
     /*------------------------------------*\
